@@ -125,7 +125,7 @@ yarn add -D eslint prettier eslint-config-prettier
 
 eslint come with a built-in command to create a config file to provide a good starting point. You can run the following command to create a `.eslintrc.js` file. You'll be prompted several questions about your project. For this project, answer these questions like so.
 
-```text
+```bash
 $ yarn eslint --init
 You can also run this command directly using 'npm init @eslint/config'.
 ? How would you like to use ESLint? …
@@ -203,9 +203,27 @@ Now you can run `yarn lint` to check your code style and `yarn lint:fix` to fix 
 
 ## Backend eslint and prettier Setup
 
+### 0. Create a backend directory
+
 The eslint setup step are similar to the frontend setup. The only difference is that you should answer the questions differently when running `yarn eslint --init`.
 
-```text
+#### 1. initialize a new Node.js project for eslint and prettier
+
+```bash
+mkdir backend
+cd backend
+yarn init -y
+```
+
+#### 2. Install eslint and prettier
+
+```bash
+yarn add -D eslint prettier eslint-config-prettier
+```
+
+#### 3. Init eslint
+
+```bash
 $ yarn eslint --init
 You can also run this command directly using 'npm init @eslint/config'.
 ? How would you like to use ESLint? …
