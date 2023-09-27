@@ -79,14 +79,11 @@ cd backend
 yarn
 ```
 
-#### 2.1. Setup MongoDB
+#### 2.1. Setup `.env` file
 
 ```bash
 # 建立 .env 並填上 PORT 和 link
 cp .env.example .env
-
-yarn add mongoose
-
 ```
 
 ![picture 0](images/033b70bd5bb42ef5c73986c6aea3e9e114bae563e625fdf489595dda8b56ab06.png)  
